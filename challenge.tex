@@ -1,0 +1,86 @@
+\begin{challenge}
+    \chatitle{Fixed-Size Containers with \texttt{std::array} in C++}
+    \begin{chadescription}
+    In C++, the \texttt{std::array} class provides a modern, safer alternative to traditional C-style arrays. 
+    Unlike raw arrays, \texttt{std::array} is a fixed-size container that comes with additional functionality, such as bounds checking and a rich set of member functions.
+    It combines the efficiency of arrays with the features of object-oriented programming, making it a powerful tool for managing fixed-size collections of data.
+
+    At its core, \texttt{std::array} helps developers write cleaner and more maintainable code. 
+    With built-in support for operations like size retrieval and range-based iteration, it reduces the need for manual bookkeeping and error-prone practices often associated with raw arrays.
+    Furthermore, since \texttt{std::array} is part of the Standard Template Library (STL), it integrates seamlessly with other modern C++ features, such as algorithms and iterators.
+
+    In this challenge, you'll explore how to declare, initialize, and use \texttt{std::array} in practical scenarios.
+    You'll compare it to traditional C-style arrays to understand the added safety and functionality it provides.
+    By the end, you’ll have a solid grasp of when and why to use \texttt{std::array} in your C++ programs.
+    Let’s dive in and see how \texttt{std::array} can simplify and enhance your code!
+    \end{chadescription}
+
+    \begin{task}
+        Write a simple program using \texttt{std::array} that performs the following steps:
+        \begin{enumerate}
+            \item Declare an \texttt{std::array} of size 5 to store integer values.
+            \item Initialize the array with the values \texttt{1, 2, 3, 4, 5}.
+            \item Use a loop to print each element of the array to the terminal.
+            \item Modify the third element of the array to the value \texttt{10}.
+            \item Print the updated array to the terminal.
+        \end{enumerate}
+        
+        Save your program and run it to ensure the output matches your expectations.
+        
+        \begin{questions}
+            \item What changes are required to modify a specific element in an \texttt{std::array}? How does this differ from modifying an element in a C-style array?
+            \item Why is the size of the array fixed when using \texttt{std::array}? What happens if you try to exceed the declared size?
+            \item How does the \texttt{size()} method of \texttt{std::array} simplify working with arrays compared to using \texttt{sizeof} in C?
+        \end{questions}
+    \end{task}
+
+
+    \begin{task}
+        Write a program using \texttt{std::array} that performs the following steps:
+        \begin{enumerate}
+            \item Declare and initialize an \texttt{std::array} of size 10 with the values \texttt{2, 4, 6, 8, 10, 12, 14, 16, 18, 20}.
+            \item Implement a function named \texttt{calculateSum} that takes the \texttt{std::array} as a parameter and returns the sum of its elements.
+            \item Use a range-based \texttt{for} loop to print all even numbers in the array to the terminal.
+            \item Reverse the elements of the array manually by swapping elements from the beginning and the end.
+            \item Print the reversed array, followed by the sum of its elements, to the terminal.
+        \end{enumerate}
+        
+        Save your program, compile it, and ensure that it runs correctly. Think carefully about how \texttt{std::array} makes your implementation easier and more robust compared to a raw C-style array.
+        
+        \begin{questions}
+            \item How does using \texttt{std::array} simplify the implementation of a fixed-size collection compared to using a C-style array?
+            \item When reversing the array manually, what challenges might arise with raw arrays that \texttt{std::array} helps avoid?
+            \item What benefits does the range-based \texttt{for} loop offer in printing the array's elements?
+        \end{questions}
+    \end{task}
+        
+
+    \begin{task}
+        Write a program using \texttt{std::array} that performs the following steps:
+        \begin{enumerate}
+            \item Declare and initialize an \texttt{std::array} of size 7 with the values \texttt{3, 1, 4, 1, 5, 9, 2}.
+            \item Implement a function named \texttt{findMax} that takes the \texttt{std::array} as a parameter and returns the largest element in the array.
+            \item Implement a function named \texttt{rotateRight} that takes the \texttt{std::array} as a parameter and shifts all elements one position to the right, moving the last element to the first position.
+            \item Call \texttt{rotateRight} three times on the array, printing the array to the terminal after each rotation.
+            \item Print the largest element in the final rotated array using the \texttt{findMax} function.
+        \end{enumerate}
+        
+        Save your program, compile it, and ensure it runs correctly. This task requires you to think carefully about how to manipulate the contents of the \texttt{std::array} and handle array indices correctly.
+        
+        \begin{questions}
+            \item How does the implementation of \texttt{rotateRight} highlight the benefits of using \texttt{std::array} over a raw C-style array?
+            \item What challenges might arise when accessing array elements during the rotation, and how did you address these challenges?
+            \item Why is it important to test the \texttt{findMax} function with various inputs? How would you modify the program to handle an empty array safely?
+        \end{questions}
+    \end{task}
+        
+    \begin{advise}
+        Working with \texttt{std::array} helps you understand the balance between safety and performance in C++. 
+        Unlike raw C-style arrays, \texttt{std::array} provides clear and consistent methods to work with fixed-size collections, making your code more readable and less prone to errors. 
+        Through this challenge, you have explored key concepts such as passing arrays to functions, iterating over elements efficiently, and manipulating the contents of an array. 
+        Always think carefully about how your operations on arrays affect memory and program logic, especially when dealing with indices and boundaries. 
+        With practice, you'll find \texttt{std::array} to be a reliable and powerful tool for organizing and processing data in C++ programs.
+    \end{advise}
+        
+\end{challenge}
+    
